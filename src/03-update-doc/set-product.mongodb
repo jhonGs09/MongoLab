@@ -1,0 +1,87 @@
+// set-product.mongodb
+
+use("pet_store")
+
+db.products.updateOne(
+    // query
+    { _id: 1 },
+    // change => operators
+    {
+        $set: {
+            title: 'Cambio_01',
+            price: 10.35,
+        }
+    },
+    { _id: 2 },
+    // change => operators
+    {
+        $set: {
+            title: 'Cambio_02',
+            price: 20.25,
+        }
+    },
+    { _id: 3 },
+    // change => operators
+    {
+        $set: {
+            title: 'Cambio_03',
+            price: 30.55,
+        }
+    },
+    { _id: 4 },
+    // change => operators
+    {
+        $set: {
+            title: 'Cambio_04',
+            price: 40.45,
+        }
+    },
+    { _id: 5 },
+    // change => operators
+    {
+        $set: {
+            title: 'Cambio_05',
+            price: 50.96,
+        }
+    },
+    { _id: 6 },
+    // change => operators
+    {
+        $set: {
+            title: 'Cambio_06',
+            price: 60.85,
+        }
+    },
+    { _id: 7 },
+    // change => operators
+    {
+        $set: {
+            title: 'Cambio_07',
+            price: 70.58,
+        }
+    },
+    { _id: 8 },
+    // change => operators
+    {
+        $set: {
+            title: 'Cambio_08',
+            price: 80.95,
+        }
+    },
+    { _id: 9 },
+    // change => operators
+    {
+        $set: {
+            title: 'Cambio_09',
+            price: 90.88,
+        }
+    },
+    { _id: 10 },
+    // change => operators
+    {
+        $set: {
+            title: 'Cambio_10',
+            price: 100.99,
+        }
+    }
+)
