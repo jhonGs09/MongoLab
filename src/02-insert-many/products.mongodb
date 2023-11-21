@@ -1,0 +1,149 @@
+// products.mongodb
+
+use("pet_store")
+
+db.products.drop() // elimina los documentos creados en la colleccion anteriormente
+
+db.products.insertMany([
+    {
+        title: "Juguete para Gatos Interactivo",
+        price: 12.99,
+        description: "Juguete interactivo con plumas y sonidos para mantener entretenido a tu gato durante horas.",
+        category: "Juguetes",
+        image: "url_imagen_1.jpg"
+    },
+    {
+        title: "Collar Reflectante para Perros",
+        price: 9.95,
+        description: "Collar ajustable con material reflectante para mayor visibilidad y seguridad durante paseos nocturnos.",
+        category: "Accesorios",
+        image: "url_imagen_2.jpg"
+    },
+    {
+        title: "Cama Suave para Mascotas",
+        price: 29.99,
+        description: "Cama acolchada y cómoda para perros y gatos, ideal para descansar y dormir plácidamente.",
+        category: "Camas",
+        image: "url_imagen_3.jpg"
+    },
+    {
+        title: "Comedero Automático para Perros y Gatos",
+        price: 39.95,
+        description: "Dispensador de comida programable para alimentar a tu mascota automáticamente en horarios establecidos.",
+        category: "Alimentación",
+        image: "url_imagen_4.jpg"
+    },
+    {
+        title: "Cepillo de Aseo para Perros de Pelo Largo",
+        price: 14.50,
+        description: "Cepillo diseñado específicamente para desenredar y eliminar el pelo muerto de razas de pelo largo.",
+        category: "Higiene",
+        image: "url_imagen_5.jpg"
+    },
+    {
+        title: "Transportín Portátil para Mascotas",
+        price: 34.99,
+        description: "Bolso de transporte cómodo y seguro para llevar a tu mascota en tus viajes o paseos.",
+        category: "Viaje",
+        image: "url_imagen_6.jpg"
+    },
+    {
+        title: "Pelota de Caucho Resistente para Perros",
+        price: 7.99,
+        description: "Pelota de caucho duradero y resistente diseñada para juegos de lanzar y morder para perros activos.",
+        category: "Juguetes",
+        image: "url_imagen_7.jpg"
+    },
+    {
+        title: "Arnés Acolchado para Perros",
+        price: 18.75,
+        description: "Arnés acolchado ajustable para un paseo cómodo y seguro con tu perro.",
+        category: "Accesorios",
+        image: "url_imagen_8.jpg"
+    },
+    {
+        title: "Casa para Roedores",
+        price: 22.49,
+        description: "Pequeña casa de madera para hámsters o ratones, ideal para brindarles un refugio acogedor.",
+        category: "Roedores",
+        image: "url_imagen_9.jpg"
+    },
+    {
+        title: "Chaleco Salvavidas para Perros",
+        price: 26.99,
+        description: "Chaleco flotador ajustable para seguridad en el agua durante actividades acuáticas con tu perro.",
+        category: "Accesorios",
+        image: "url_imagen_10.jpg"
+    },
+    {
+        title: "Juguete de Cuerda para Masticar",
+        price: 8.25,
+        description: "Juguete de cuerda resistente para perros que adoran morder y jugar tirando de objetos.",
+        category: "Juguetes",
+        image: "url_imagen_11.jpg"
+    },
+    {
+        title: "Champú Hipoalergénico para Mascotas",
+        price: 15.99,
+        description: "Champú suave y libre de químicos agresivos, ideal para pieles sensibles de mascotas.",
+        category: "Higiene",
+        image: "url_imagen_12.jpg"
+    },
+    {
+        title: "Rascador para Gatos",
+        price: 32.50,
+        description: "Árbol rascador con plataformas y cuevas para que tu gato juegue, se esconda y afile sus uñas.",
+        category: "Accesorios",
+        image: "url_imagen_13.jpg"
+    },
+    {
+        title: "Peine Quita Pulgas para Perros y Gatos",
+        price: 11.95,
+        description: "Peine con dientes finos para eliminar pulgas y residuos del pelaje de tu mascota de forma efectiva.",
+        category: "Higiene",
+        image: "url_imagen_14.jpg"
+    },
+    {
+        title: "Snacks Naturales para Entrenamiento",
+        price: 6.99,
+        description: "Premios pequeños y saludables ideales para el adiestramiento y refuerzo positivo de tu mascota.",
+        category: "Alimentación",
+        image: "url_imagen_15.jpg"
+    },
+    {
+        title: "Bola Giratoria con Premio Oculto",
+        price: 10.49,
+        description: "Juguete interactivo con un premio oculto que estimula el juego y la agilidad de tu mascota.",
+        category: "Juguetes",
+        image: "url_imagen_16.jpg"
+    },
+    {
+        title: "Correa Extensible para Perros",
+        price: 20.25,
+        description: "Correa retráctil que ofrece libertad de movimiento controlado para paseos cómodos con tu perro.",
+        category: "Accesorios",
+        image: "url_imagen_17.jpg"
+    },
+    {
+        title: "Hamaca para Gatos",
+        price: 18.99,
+        description: "Hamaca con suave almohadilla para que tu gato descanse cómodamente y disfrute de las alturas.",
+        category: "Accesorios",
+        image: "url_imagen_18.jpg"
+    },
+    {
+        title: "Juguete Dispensador de Golosinas",
+        price: 14.75,
+        description: "Juguete interactivo que dispensa golosinas o croquetas para mantener a tu mascota entretenida.",
+        category: "Juguetes",
+        image: "url_imagen_19.jpg"
+    },
+    {
+        title: "Kit de Corte de Uñas para Mascotas",
+        price: 9.50,
+        description: "Set de herramientas ergonómicas para cortar las uñas de perros, gatos y otras mascotas de manera segura.",
+        category: "Higiene",
+        image: "url_imagen_20.jpg"
+    }
+]
+)
